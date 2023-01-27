@@ -1,0 +1,14 @@
+.trending {
+  margin-top: 50px;
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  &__title {
+    text-align: center;
+    > h2 {
+      color: #3495c5;
+      font-size: 3rem;
+    }
+  }
+}

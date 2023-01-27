@@ -1,8 +1,4 @@
 .nav {
-  -webkit-box-shadow: -1px 10px 15px -5px rgba(52, 149, 197, 1);
-  -moz-box-shadow: -1px 10px 15px -5px rgba(52, 149, 197, 1);
-  box-shadow: -1px 10px 15px -5px rgba(52, 149, 197, 1);
-  background-color: #000;
   padding: 20px 0;
   &__container {
     max-width: 1200px;
@@ -13,20 +9,30 @@
   }
 
   &__logo {
-    display: flex;
-    align-items: center;
-    > h2 {
-      margin-bottom: 20px;
-      margin-left: -10px;
-      color: #3495c5;
-    }
-    > img {
-      height: 80px;
+    a {
+      display: flex;
+      align-items: center;
+      > h2 {
+        margin-bottom: 20px;
+        margin-left: -10px;
+        color: #3495c5;
+      }
+      > img {
+        height: 80px;
+      }
     }
   }
   &__list {
     display: flex;
     &__link {
+      width: 120px;
+      padding: 10px;
+      text-align: center;
+      -webkit-box-shadow: 1px 1px 5px 0px rgba(52, 149, 197, 1);
+      -moz-box-shadow: 1px 1px 5px 0px rgba(52, 149, 197, 1);
+      box-shadow: 1px 1px 5px 0px rgba(52, 149, 197, 1);
+      border: 1px solid gray;
+      border-radius: 8px;
       &:not(:last-child) {
         margin-right: 30px;
       }
