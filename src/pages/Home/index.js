@@ -1,7 +1,14 @@
+import { MovieSlider } from "components";
 import React from "react";
 
 const Home = () => {
-  return <div></div>;
+  return (
+    <main>
+      <section>
+        <MovieSlider />
+      </section>
+    </main>
+  );
 };
 
 export default Home;
