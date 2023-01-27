@@ -24,8 +24,10 @@ const Navbar = () => {
     <nav className="nav">
       <div className="nav__container">
         <div className="nav__logo">
-          <img src={Logo} alt="" />
-          <h2>HD-Movies</h2>
+          <Link to="/">
+            <img src={Logo} alt="" />
+            <h2>HD-Movies</h2>
+          </Link>
         </div>
         <ul className="nav__list">
           {links?.map((link) => (
