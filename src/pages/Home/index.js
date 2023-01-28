@@ -9,7 +9,6 @@ const Home = () => {
       <section>
         <Hero />
         <TrendingMovies />
-
         <Footer />
       </section>
     </main>

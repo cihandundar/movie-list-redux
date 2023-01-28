@@ -1,5 +1,5 @@
 import React from "react";
-import Soldier from "assets/images/soldier.png";
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -11,9 +11,6 @@ const Footer = () => {
         >
           ROAD TO HAPPINESS
         </a>
-        <div className="footer__img">
-          <img src={Soldier} alt="" />
-        </div>
       </div>
     </footer>
   );
