@@ -1,5 +1,5 @@
 import React from "react";
-import Movies from "assets/images/movies-1.png";
+import Cinema from "assets/images/cinema.png";
 import { Link } from "react-router-dom";
 const Hero = () => {
   return (
@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="hero">
         <div className="hero__container">
           <div className="hero__image">
-            <img src={Movies} alt="" />
+            <img src={Cinema} alt="" />
           </div>
           <div className="hero__text">
             <div className="hero__title">
