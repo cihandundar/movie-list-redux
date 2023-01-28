@@ -32,7 +32,6 @@ const TrendingItem = () => {
       rating: 7.2,
     },
   ];
-  console.log(images, "deneme");
   return (
     <div className="item">
       <div className="item__container">
