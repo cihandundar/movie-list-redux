@@ -14,7 +14,9 @@ const Movies = () => {
           <img src={Loading} alt="" />
         </div>
       ) : (
-        <MovieItem />
+        <div className="container__movie">
+          <MovieItem />
+        </div>
       )}
     </section>
   );
