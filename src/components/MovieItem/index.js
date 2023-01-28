@@ -14,13 +14,16 @@ const MovieItem = () => {
 
   return (
     <div className="movie">
+      <div className="movie__title">
+        <h1>Movies</h1>
+      </div>
       <div className="movie__container">
         {movies?.map((movie) => (
-          <div key={movie?.id}>
-            <div>
+          <div className="movie__card" key={movie?.id}>
+            <div className="movie__card__img">
               <img src={IMG_API + movie?.poster_path} alt="" />
             </div>
-            <div className="container__title">
+            <div className="movie__card__title">
               <h3>{movie?.title}</h3>
             </div>
           </div>

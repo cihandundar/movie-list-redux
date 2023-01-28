@@ -1,0 +1,40 @@
+.movie {
+  &__title {
+    text-align: center;
+    padding-bottom: 20px;
+    h1 {
+      font-size: 3rem;
+      color: #3495c5;
+    }
+  }
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__card {
+    padding-block: 10px;
+    width: 280px;
+    text-align: center;
+
+    &__img {
+      border-radius: 8px;
+      -webkit-box-shadow: 1px 1px 5px 0px rgba(52, 149, 197, 1);
+      -moz-box-shadow: 1px 1px 5px 0px rgba(52, 149, 197, 1);
+      box-shadow: 1px 1px 5px 0px rgba(52, 149, 197, 1);
+      img {
+        width: 100%;
+        border-radius: 8px;
+      }
+    }
+    &__title {
+      h3 {
+        margin-top: 10px;
+        color: #fff;
+        font-weight: 200;
+      }
+    }
+  }
+}

@@ -68,10 +68,12 @@ body.active-modal {
     left: 50%;
     transform: translate(-50%, -50%);
     line-height: 1.4;
-    background: #f1f1f1;
-    -webkit-box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.75);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 50px 28px;
     border-radius: 8px;
     max-width: 600px;
