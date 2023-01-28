@@ -7,11 +7,18 @@
     &__list {
       display: flex;
       justify-content: space-between;
+      @include breakpoint(l) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
     }
   }
   &__img {
     height: 330px;
     cursor: pointer;
+    @include breakpoint(l) {
+      margin: 10px;
+    }
     img {
       height: 100%;
       border-radius: 8px;

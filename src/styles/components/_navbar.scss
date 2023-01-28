@@ -6,9 +6,21 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include breakpoint(lg) {
+      max-width: 900px;
+    }
+    @include breakpoint(md) {
+      max-width: 700px;
+    }
+    @include breakpoint(sm) {
+      flex-direction: column;
+    }
   }
 
   &__logo {
+    @include breakpoint(sm) {
+      margin-bottom: 30px;
+    }
     a {
       display: flex;
       align-items: center;
