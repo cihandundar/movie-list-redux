@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import Loading from "assets/images/loading.gif";
-// import { MovieItem } from "components";
+import { MovieItem } from "components";
+
 const Movies = () => {
   const [loading, setLoading] = useState(true);
   setTimeout(() => {
@@ -14,7 +15,9 @@ const Movies = () => {
           <img src={Loading} alt="" />
         </div>
       ) : (
-        <div className="container__movie">{/* <MovieItem /> */}</div>
+        <div className="container__movie">
+          <MovieItem />
+        </div>
       )}
     </section>
   );
