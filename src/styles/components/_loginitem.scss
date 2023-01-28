@@ -17,12 +17,8 @@
       background: none;
       border-bottom: 1px solid #000;
       outline: none;
-    }
-  }
-  &__footer {
-    > p {
-      span {
-        color: gray;
+      &::placeholder {
+        color: #000;
       }
     }
   }
