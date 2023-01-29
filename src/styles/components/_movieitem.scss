@@ -7,6 +7,16 @@
       color: #3495c5;
     }
   }
+  &__input {
+    > input {
+      width: 300px;
+      height: 45px;
+      border-radius: 8px;
+      padding-inline: 10px;
+      border: none;
+      outline: none;
+    }
+  }
   &__container {
     max-width: 1200px;
     margin: 0 auto;
