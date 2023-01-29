@@ -1,7 +1,4 @@
 .loginitem {
-  @include breakpoint(sm) {
-    margin-top: 65px;
-  }
   &__form {
     > button {
       width: 100%;
