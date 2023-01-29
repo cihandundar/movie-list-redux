@@ -9,6 +9,9 @@
   }
   &__img {
     position: relative;
+    @include breakpoint(sm) {
+      margin-top: 100px;
+    }
     img {
       width: 100%;
     }
