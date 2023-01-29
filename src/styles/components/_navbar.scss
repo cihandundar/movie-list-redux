@@ -36,6 +36,9 @@
   }
   &__list {
     display: flex;
+    @include breakpoint(sm) {
+      flex-direction: column;
+    }
     &__link {
       width: 120px;
       padding: 10px;
@@ -47,6 +50,10 @@
       border-radius: 8px;
       &:not(:last-child) {
         margin-right: 30px;
+        @include breakpoint(sm) {
+          margin-right: 0;
+          margin-bottom: 30px;
+        }
       }
       > a {
         color: #3495c5;

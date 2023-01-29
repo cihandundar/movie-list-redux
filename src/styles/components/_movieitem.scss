@@ -5,9 +5,13 @@
     h1 {
       font-size: 3rem;
       color: #3495c5;
+      padding-bottom: 20px;
     }
   }
   &__input {
+    @include breakpoint(sm) {
+      padding-inline: 65px;
+    }
     > input {
       width: 300px;
       height: 45px;
@@ -15,6 +19,9 @@
       padding-inline: 10px;
       border: none;
       outline: none;
+      @include breakpoint(sm) {
+        width: 100%;
+      }
     }
   }
   &__container {
