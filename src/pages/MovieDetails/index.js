@@ -33,7 +33,9 @@ const MovieDetails = () => {
               <p>{movieData.overview}</p>
             </div>
             <div className="details__col details__vote">
-              <p style={{ color: "#99682c" }}>{movieData.vote_average}</p>
+              <p style={{ color: "#99682c" }}>
+                Rating: {movieData?.vote_average?.toFixed(1)}
+              </p>
             </div>
             <div className="details__col">
               <p>Type</p>

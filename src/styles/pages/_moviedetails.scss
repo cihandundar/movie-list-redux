@@ -41,8 +41,6 @@
   &__vote {
     display: flex;
     align-items: center;
-    padding: 5px 5px;
-    border-radius: 12px;
     @include breakpoint(lg) {
       display: flex;
       justify-content: center;
