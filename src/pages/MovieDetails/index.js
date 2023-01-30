@@ -21,16 +21,16 @@ const MovieDetails = () => {
           <div className="details__img">
             <img
               src={IMG_API + movieData.poster_path}
-              alt={movieData.poster_path}
+              alt={movieData?.poster_path}
             />
           </div>
           <div className="details__text">
             <div className="details__col">
               <p>Movies</p>
-              <h2>{movieData.title}</h2>
+              <h2>{movieData?.title}</h2>
             </div>
             <div className="details__col details__overview">
-              <p>{movieData.overview}</p>
+              <p>{movieData?.overview}</p>
             </div>
             <div className="details__col details__vote">
               <p style={{ color: "#99682c" }}>
@@ -43,7 +43,7 @@ const MovieDetails = () => {
             </div>
             <div className="details__col">
               <p>Release Date:</p>
-              <span>{movieData.release_date}</span>
+              <span>{movieData?.release_date}</span>
             </div>
           </div>
         </div>
