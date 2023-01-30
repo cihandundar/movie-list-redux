@@ -54,6 +54,7 @@
   &__overview {
     p {
       font-size: 20px;
+      font-weight: 200;
       @include breakpoint(md) {
         font-size: 16px;
       }
@@ -62,7 +63,7 @@
   &__col {
     margin-top: 25px;
     h2 {
-      color: gray;
+      color: #fff;
       font-size: 32px;
       @include breakpoint(xs) {
         font-size: 26px;
@@ -70,10 +71,10 @@
     }
     p {
       margin-bottom: 5px;
-      color: gray;
+      color: #fff;
     }
     span {
-      color: gray;
+      color: #fff;
       font-weight: bold;
     }
   }
