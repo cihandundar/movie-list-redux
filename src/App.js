@@ -11,8 +11,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/movies" element={<Movies />} />
-          <Route path="/movie/:id" component={<MovieDetails />} />
+          <Route path="/movie" element={<Movies />} />
+          <Route path="/movie/:id" element={<MovieDetails />} />
           <Route path="/login" element={<Login />} />
           <Route path="*" element={<Error />} />
         </Routes>

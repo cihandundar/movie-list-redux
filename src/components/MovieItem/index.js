@@ -5,6 +5,7 @@ import { fetchMovies } from "../../redux/movieSlice";
 
 const MovieItem = () => {
   const movies = useSelector((state) => state?.movies?.data);
+
   const IMG_API = "https://image.tmdb.org/t/p/w1280";
 
   const dispatch = useDispatch();
