@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="footer__container">
         <a
           className="btn"
-          href="https://media.tumblr.com/6939cf1e8bf0ad156b01fdef080ae731/tumblr_inline_mpj1imf1BZ1qz4rgp.gif"
+          href="https://tenor.com/tr/view/kitty-cat-sandwich-cats-sandwich-gif-26112528"
           target={"_blank"}
         >
           ROAD TO HAPPINESS
