@@ -15,7 +15,7 @@ const MovieItem = () => {
   }, [dispatch]);
 
   const [search, setSearch] = useState(``);
-  // console.log(search);
+
   return (
     <div className="movie">
       <div className="movie__title">
