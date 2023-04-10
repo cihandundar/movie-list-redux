@@ -3,6 +3,7 @@ import axios from "axios";
 
 const initialState = {
   data: [],
+  itemsContainer: [],
   loading: false,
   error: "",
 };
@@ -18,16 +19,22 @@ export const fetchMovies = createAsyncThunk("fetchMovies", async () => {
 const movieSlice = createSlice({
   name: "movies",
   initialState,
-  reducers: {},
+  reducers: {
+    filteredMovie: (state, action) => {
+      state.data = state.itemsContainer.filter((item) =>
+        item.name.toLowerCase().includes(action.payload)
+      );
+    },
+  },
   extraReducers: (builder) => {
     builder.addCase(fetchMovies.pending, (state) => {
       state.loading = true;
       state.error = "";
     });
     builder.addCase(fetchMovies.fulfilled, (state, action) => {
-      console.log(state.data);
       state.data = action.payload;
       state.loading = false;
+      state.itemsContainer = action.payload;
     });
     builder.addCase(fetchMovies.rejected, (state) => {
       state.loading = false;
@@ -36,4 +43,5 @@ const movieSlice = createSlice({
   },
 });
 
+export const { filteredMovie } = movieSlice.actions;
 export default movieSlice.reducer;
