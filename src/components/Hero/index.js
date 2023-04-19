@@ -11,7 +11,7 @@ const Hero = () => {
           </div>
           <div className="hero__text">
             <div className="hero__title">
-              <h1>HD-Movies</h1>
+              <h1>Cinemarine</h1>
             </div>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
