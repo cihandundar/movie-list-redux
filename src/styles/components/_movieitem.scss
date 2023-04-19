@@ -6,6 +6,8 @@
       font-size: 3rem;
       color: #3495c5;
       padding-bottom: 20px;
+      font-weight: 400;
+      text-transform: uppercase;
     }
   }
   &__input {
@@ -13,8 +15,8 @@
       padding-inline: 65px;
     }
     > input {
-      width: 300px;
-      height: 45px;
+      width: 400px;
+      height: 35px;
       border-radius: 8px;
       padding-inline: 10px;
       border: none;
@@ -33,7 +35,7 @@
   }
   &__card {
     padding: 10px;
-    width: 280px;
+    width: 230px;
     text-align: center;
     @include breakpoint(l) {
       padding: 20px;
@@ -53,6 +55,7 @@
       h3 {
         margin-top: 10px;
         color: #fff;
+        font-size: 1rem;
         font-weight: 200;
       }
     }
